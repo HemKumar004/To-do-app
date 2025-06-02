@@ -1,0 +1,222 @@
+/* Container base */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header with toggle */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Light Mode */
+.container.light {
+  background-color: #f7f9fb;
+  color: #2d3e50;
+}
+
+/* Dark Mode */
+.container.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Task item */
+.taskItem {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-left: 6px solid #4e73df;
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  border-radius: 4px;
+}
+
+/* Task item in dark mode */
+.container.dark .taskItem {
+  background-color: #1e1e1e;
+  border-left-color: #bb86fc;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.buttonPrimary {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.buttonPrimary:hover {
+  background-color: #3754a3;
+}
+
+.buttonEdit {
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttonEdit:hover {
+  background-color: #0277bd;
+}
+
+.buttonDelete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttonDelete:hover {
+  background-color: #c0392b;
+}
+
+.buttonReminder {
+  background-color: #fbbc04;
+  color: #333;
+  border: none;
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttonReminder:hover {
+  background-color: #e6a700;
+}
+
+.buttonToggle {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttonToggle:hover {
+  background-color: #5a6268;
+}
+
+/* Buttons in dark mode */
+.container.dark .buttonPrimary {
+  background-color: #bb86fc;
+  color: #121212;
+}
+.container.dark .buttonPrimary:hover {
+  background-color: #9a63d6;
+}
+
+.container.dark .buttonEdit {
+  background-color: #03dac6;
+  color: #121212;
+}
+.container.dark .buttonEdit:hover {
+  background-color: #02b3a4;
+}
+
+.container.dark .buttonDelete {
+  background-color: #cf6679;
+  color: #121212;
+}
+.container.dark .buttonDelete:hover {
+  background-color: #b45362;
+}
+
+.container.dark .buttonReminder {
+  background-color: #fbbc04;
+  color: #121212;
+}
+.container.dark .buttonReminder:hover {
+  background-color: #e6a700;
+}
+
+.container.dark .buttonToggle {
+  background-color: #6c757d;
+  color: #e0e0e0;
+}
+.container.dark .buttonToggle:hover {
+  background-color: #5a6268;
+}
+
+/* Form inputs */
+.inputText,
+.select,
+.reminderInput {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Inputs in dark mode */
+.container.dark .inputText,
+.container.dark .select,
+.container.dark .reminderInput {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+.container.dark .inputText::placeholder {
+  color: #bbb;
+}
+
+/* Error text */
+.errorText {
+  color: #e74c3c;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* Reminder box */
+.reminderBox {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Reminder box dark mode */
+.container.dark .reminderBox {
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
+/* Label styling */
+.label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Button container */
+.buttonGroup {
+  margin-top: 12px;
+}
+
+/* Toggle dark mode button */
+.toggleDarkBtn {
+  min-width: 100px;
+}
+
+/* Task title and priority */
+.taskTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
